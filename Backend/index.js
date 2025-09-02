@@ -17,7 +17,7 @@ const queueRouter = require("./routes/queue");
 // app.use(cors(corsOptions));
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://hospital-queue-management-system-rosy.vercel.app/" 
+  "https://hospital-queue-management-system-rosy.vercel.app" 
 ];
 
 const corsOptions = {
