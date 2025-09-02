@@ -9,7 +9,7 @@ const DoctorCard = ({doctor})=>{
         // console.log(token);
 
        try{
-        const response = await fetch(`http://localhost:5000/patient/join-queue`,{
+        const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/patient/join-queue`,{
           method: 'POST',
           headers: {
             "Content-Type": "application/json",

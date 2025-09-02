@@ -25,7 +25,7 @@ const Register=()=>{
      event.preventDefault();
 
      try{
-      const response = await fetch(`http://localhost:5000/patient/signup`,{
+      const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/patient/signup`,{
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -32,7 +32,7 @@ const Department=()=>{
       useEffect(()=>{
         const fetchDoctors = async()=>{
           try{
-            const response = await fetch(`http://localhost:5000/doctor/department`);
+            const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/doctor/department`);
             const data = await response.json();
             console.log(data);
 

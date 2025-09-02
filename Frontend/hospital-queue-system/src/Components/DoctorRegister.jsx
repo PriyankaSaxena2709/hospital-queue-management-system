@@ -22,7 +22,7 @@ const DoctorRegister=()=>{
     const handleSubmit= async(event)=>{
        event.preventDefault();
        try{
-        const response = await fetch(`http://localhost:5000/doctor/signup`,{
+        const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/doctor/signup`,{
           method: "POST",
           headers:{
             "Content-Type" : "application/json",

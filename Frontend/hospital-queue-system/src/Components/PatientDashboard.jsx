@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://hospital-queue-management-system-0jm3.onrender.com/");
 
 const PatientDashboard = () => {
   const [appointment, setAppointment] = useState(null);
@@ -14,7 +14,7 @@ const PatientDashboard = () => {
     const fetchAppointment = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:5000/patient/queue`, {
+        const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/patient/queue`, {
           headers: {
             Authorization: `${token}`,
           },

@@ -10,7 +10,7 @@ const DoctorDashboard = () => {
     const fetchPatient = async()=>{
       try{
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:5000/doctor/queue`, {
+        const response = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/doctor/queue`, {
           headers:{
             Authorization: token,
           },
@@ -27,7 +27,7 @@ const DoctorDashboard = () => {
 
   const handleAttended = async(id)=>{
      try{
-      const res = await fetch(`http://localhost:5000/queue/mark-attended/${id}`,{
+      const res = await fetch(`https://hospital-queue-management-system-0jm3.onrender.com/queue/mark-attended/${id}`,{
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
