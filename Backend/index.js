@@ -9,12 +9,31 @@ const patientRouter = require("./routes/patient");
 const doctorRouter = require("./routes/doctor");
 const queueRouter = require("./routes/queue");
 
-const corsOptions ={
-    origin: "http://localhost:5173",
-    methods: "GET, POST, PUT, PATCH, DELETE, HEAD",
-    credentials: true
+// const corsOptions ={
+//     origin: "http://localhost:5173",
+//     methods: "GET, POST, PUT, PATCH, DELETE, HEAD",
+//     credentials: true
+// };
+// app.use(cors(corsOptions));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://hospital-queue-management-system-rosy.vercel.app/" 
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: "GET, POST, PUT, PATCH, DELETE, HEAD",
+  credentials: true
 };
+
 app.use(cors(corsOptions));
+
 
 
 app.use(express.json());
