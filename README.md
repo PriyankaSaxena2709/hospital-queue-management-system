@@ -25,7 +25,7 @@ By streamlining the process, the system reduces waiting room chaos, improves pat
 
 🔐 **Secure Authentication** - User authentication using JWT.
 
-## Tech Stack
+## 🛠Tech Stack
 
 ✅ React.js
 
