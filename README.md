@@ -37,8 +37,6 @@ By streamlining the process, the system reduces waiting room chaos, improves pat
 
 ✅ Socket.io
 
-## Installation
-
 ## ⚙️ Installation
 
 Clone the repo:
@@ -54,13 +52,23 @@ cd Backend
 
 Install Dependencies 
 ```bash
-npm instal
+npm install
 ```
 
 Start the server
 ```bash
 npm start
 ```
+## Environment Variables
+
+To run the project add environment variables
+
+ MONGO_URI
+
+ JWT_SECRET
+
+ ## Usage
+ Register as a patient, book an appointment in specific department and track your queue position in real time from anywhere. 
 
 
 
