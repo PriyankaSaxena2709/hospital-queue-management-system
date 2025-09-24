@@ -39,9 +39,32 @@ By streamlining the process, the system reduces waiting room chaos, improves pat
 
 ## Installation
 
+## ⚙️ Installation
+
 Clone the repo:
+
 ```bash
 git clone https://github.com/PriyankaSaxena2709/hospital-queue-management-system.git
+```
+
+Go to the project directory
+```bash
+cd Backend
+```
+
+Install Dependencies 
+```bash
+npm instal
+```
+
+Start the server
+```bash
+npm start
+```
+
+
+
+
 
 
 
