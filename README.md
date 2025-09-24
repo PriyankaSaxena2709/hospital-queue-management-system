@@ -41,7 +41,7 @@ By streamlining the process, the system reduces waiting room chaos, improves pat
 
 Clone the repo:
 ```bash
-
+git clone https://github.com/PriyankaSaxena2709/hospital-queue-management-system.git
 
 
 
